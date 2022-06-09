@@ -1,0 +1,19 @@
+{
+  "name": "wfrp4e-simple-rolls",
+  "title": "WFRP4E - simple roll",
+  "description": "WFRP4E - simple roll chat commands",
+  "author": "MrTheBino",
+  "version": "0.0.1",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9",
+  "esmodules": [
+    "scripts/roller.js"
+  ],
+  "dependencies": [
+    {
+      "name": "_chatcommands",
+      "type": "module",
+      "manifest": "https://github.com/League-of-Foundry-Developers/Chat-Commands-Lib/releases/download/1.2.0/module.json"
+    }
+  ]
+}
