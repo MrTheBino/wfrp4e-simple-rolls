@@ -18,16 +18,17 @@ jobs:
       - name: Get Version
         shell: bash
         id: get-version
-        run: echo "::set-output name=version::$(node ./github/workflows/get-version.js)"
+        run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
 
       - name: Create Release
         id: create-release
         uses: ncipollo/release-action@v1
+        if: endsWith(github.ref, 'main')
         with:
           allowUpdates: true
-          name: Release ${{steps.get-version.outputs.version}}
+          name: Latest
           draft: false
           prerelease: false
           token: ${{secrets.GITHUB_TOKEN}}
           artifacts: './wfrp4e-simple-rolls.zip ./module.json'
-          tag: ${{steps.get-version.outputs.version}}
+          tag: latest
