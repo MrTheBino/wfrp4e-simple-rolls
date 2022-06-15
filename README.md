@@ -9,6 +9,11 @@ You can use the module along with the offical FoundryVTT system [Warhammer Fanta
 
 If you find bugs or have other suggestions, feel free to contact me via discord: MrTheBino#7878
 
+## Installation
+
+Use this URL to install the module in foundry:
+
+    https://github.com/MrTheBino/wfrp4e-simple-rolls/releases/download/latest/module.json
 ## Why does this module exists? ##
 
 The main reason, why I created this module are the other great features of FoundryVTT (like fog of war, scenes, music etc) but I didn't want to use the WFRP4E official system for FoundryVTT. Don't get me wrong, it's great but we're using real paper
