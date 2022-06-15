@@ -30,5 +30,5 @@ jobs:
           draft: false
           prerelease: false
           token: ${{secrets.GITHUB_TOKEN}}
-          artifacts: './wfrp4e-simple-rolls.zip ./module.json'
+          artifacts: './wfrp4e-simple-rolls.zip,./module.json'
           tag: latest
